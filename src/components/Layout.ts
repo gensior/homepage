@@ -5,7 +5,7 @@ export default {
     view: function(vnode: m.Vnode) : m.Vnode {
         return m("div", [
             m(Nav),
-            vnode.children
+            m(".container", vnode.children)
         ])
     }
 }
